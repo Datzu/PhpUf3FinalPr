@@ -3,7 +3,7 @@
     if ($connexio->connect_errno) {
         echo "No s'ha pogut connectar a la base de dades: " . $connexio->connect_error." - ".$connexio->connect_errno;
     } else {
-        
+        // asdasdasdasd
         function showIP(){
             $sentenciaSql = "SELECT serverIP FROM servers";
             $result = $connexio->query($sentenciaSql);
