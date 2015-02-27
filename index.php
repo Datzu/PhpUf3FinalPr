@@ -6,11 +6,11 @@
         <link href="style.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
-        <div>
-            <a href="index.php"><button>Return</button></a>
-        </div>
         <?php
             include './controlers/mainControler.php';
         ?>
+        <div>
+            <a href="index.php"><button>Return</button></a>
+        </div>
     </body>
 </html>

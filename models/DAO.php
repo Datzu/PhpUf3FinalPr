@@ -17,7 +17,7 @@
             try {
                 $this->connection = mysqli_connect($this->dir, $this->user, $this->pass, $this->db);
             } catch (Exception $ex) {
-                echo $ex;
+                return $ex;
             }
         }
         
@@ -25,7 +25,7 @@
             try {
                 $this->connection = mysqli_connect($dir, $user, $pass, $db);
             } catch (Exception $ex) {
-                echo $ex;
+                return $ex;
             }
         }
         
@@ -41,10 +41,11 @@
             mysqli_close($this->connection);
         }
 
-}
+    }
     
     interface iDAO {
         
+        public function startDefaultConnection();
         public function startConnection($dir, $user, $pass, $db);
         public function executeQuery($query);
         public function getRows($result);

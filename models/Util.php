@@ -1,7 +1,5 @@
 <?php
 
-    include './models/DAO.php';
-
     function showIP(){
         $dao = new DAO();
         $dao->startDefaultConnection();
@@ -16,7 +14,6 @@
     
     function showLog() {
         if (isset($_SESSION['log'])) {
-            echo "<br>";
             foreach ($_SESSION['log'] as $log) {
                 echo $log."<br>";
             }
