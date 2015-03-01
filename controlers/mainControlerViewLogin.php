@@ -1,6 +1,6 @@
 <?php
-            
-    if (isset($_POST['state'])) {
+
+    if (isset($_POST['login'])) {
         $correct = true;
         if ($_POST['state'] == 0) {
             $user = $_POST['user'];
@@ -41,18 +41,14 @@
                         }
                         if ($user == $userResult && $pass == $passResult && $serverIP == $serverIPResult) {
                             $_SESSION['user'] = $user;
+                            include './controlers/mainControlerSelector.php';
+                            return;
                         }
                     }
                 }
             }
         }
-        if ($correct) {
-            include './controlers/mainView.php';
-        } else {
-            include './views/mainViewLogin.php';
-        }
     } else {
         include './views/mainViewLogin.php';
     }
-
 ?>

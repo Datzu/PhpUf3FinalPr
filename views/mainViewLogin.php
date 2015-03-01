@@ -2,8 +2,9 @@
     showLog();
 ?>
 <form method='post' action='index.php'>
+    <input type="text" name="login" value="0" hidden />
     <input type="text" name="state" value="0" hidden />
-    <h1>User registration: </h1>
+    <h1>User login: </h1>
     Server address: <select name='serverIP'>
                     <?php
                         showIP();

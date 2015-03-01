@@ -3,10 +3,10 @@
     include './models/Util.php';
     include './models/DAO.php';
 
-    if (isset($_POST['login'])) {
-        include './controlers/mainView.php';
+    if (isset($_SESSION['user'])) {
+        include './controlers/mainControlerSelector.php';
     } else {
-        include './controlers/mainViewLogin.php';
+        include './controlers/mainControlerViewLogin.php';
     }
 
 ?>
