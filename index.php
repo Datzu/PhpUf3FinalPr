@@ -10,7 +10,7 @@
             include './controlers/mainControler.php';
         ?>
         <div>
-            <a href='closeSession.php'><button>Close session</button></a><a href='index.php'><button>Home</button></a>
+            <a href='closeSession.php'><button>Close session 3</button></a><a href='index.php'><button>Home</button></a>
         </div>
     </body>
 </html>
