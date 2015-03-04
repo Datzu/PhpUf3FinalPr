@@ -21,7 +21,7 @@
         }
     }
     
-    function showDataBases() {
+    function showDatabases() {
         $dao = new DAO();
         $dao->startDefaultConnection();
         $result = $dao->executeQuery("show databases;");

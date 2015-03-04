@@ -41,10 +41,14 @@
                         }
                         if ($user == $userResult && $pass == $passResult && $serverIP == $serverIPResult) {
                             $_SESSION['user'] = $user;
+                            $correctLogin = true;
                             include './controlers/mainControlerSelector.php';
                             return;
                         }
                     }
+                }
+                if (!$correctLogin) {
+                    include './views/mainViewLogin.php';
                 }
             }
         }
