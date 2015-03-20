@@ -1,7 +1,7 @@
 <?php
     showLog();
 ?>
-<form method='post' action='index.php'>
+<form method='post' action='index.php' id="formulari">
     <input type="text" name="login" value="0" hidden />
     <input type="text" name="state" value="0" hidden />
     <h1>User login: </h1>

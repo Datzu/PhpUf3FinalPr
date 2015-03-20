@@ -1,4 +1,4 @@
-<form method='post' action='index.php'>
+<form method='post' action='index.php' id="formulari">
     <input type="text" name="createTable" value="0" hidden />
     <input type="text" name="state" value="1" hidden />
     <table>

@@ -1,0 +1,20 @@
+body {
+    margin: 6% 32.5%;
+    background-image: url("background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #AAFFF5;
+}
+
+#formulari{
+    
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 4% 5.5% 4% 5.5%;
+    width: 270px;
+    background-image: url('azul.jpg');
+    color: lightblue;
+    text-align: center;
+}

@@ -1,0 +1,54 @@
+create database if not exists supermarket
+
+drop table if exists Client;
+
+
+CREATE TABLE `Client` (
+  `id` int(2) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `wallet` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+insert into Client values("1","Client E","23423423","");
+insert into Client values("8","Client O","54","");
+insert into Client values("9","Client A","34234","");
+insert into Client values("10","Client B","23123","");
+
+
+
+create database if not exists supermarket
+
+drop table if exists Product;
+
+
+CREATE TABLE `Product` (
+  `id` int(2) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `quantity` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+insert into Product values("1","Product A","27","");
+insert into Product values("2","Product B","85","");
+insert into Product values("3","Product C","50","");
+insert into Product values("4","Product D","25","");
+
+
+
+create database if not exists supermarket
+
+drop table if exists Vendor;
+
+
+CREATE TABLE `Vendor` (
+  `id` int(2) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+insert into Vendor values("1","Vendor A");
+insert into Vendor values("2","Vendor B");
+
+
+
